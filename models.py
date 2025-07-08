@@ -8,9 +8,9 @@ class Deals(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     agent: Mapped[str]
     contractor: Mapped[ str]
-    ds_create_date: Mapped[Date] = mapped_column(Date)
+    ds_create_date: Mapped[Date] = mapped_column(Date, nullable=True)
     ds_name: Mapped[str]
-    deal_create_date: Mapped[Date] = mapped_column(Date)
+    deal_create_date: Mapped[Date] = mapped_column(Date, nullable=True)
     name_deal: Mapped[str]
     deal_subject: Mapped[str]
     ds_deal_subject: Mapped[str]
