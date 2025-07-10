@@ -13,9 +13,7 @@ def read_csv(file_name):
         reader = csv.DictReader(f, fields, delimiter=';')
         for row in reader:
             if not row['ds_create_date']:
-            #     row['ds_create_date'] = row['ds_create_date']
-            # else:
-                row['ds_create_date'] = None
+               row['ds_create_date'] = None
             save_deals_data(row)
 
 def save_deals_data(row):

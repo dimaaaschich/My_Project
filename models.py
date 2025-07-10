@@ -7,7 +7,7 @@ class Deals(Base):
     __tablename__ = 'deals_list'
     id: Mapped[int] = mapped_column(primary_key=True)
     agent: Mapped[str]
-    contractor: Mapped[ str]
+    contractor: Mapped[str]
     ds_create_date: Mapped[Date] = mapped_column(Date, nullable=True)
     ds_name: Mapped[str]
     deal_create_date: Mapped[Date] = mapped_column(Date, nullable=True)
